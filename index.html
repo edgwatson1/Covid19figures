@@ -27,68 +27,24 @@
       <thead>
         <tr>
           <th>
-            <h2>
-              Country<span
-                id="Country"
-                onclick="countrySortDescending(event.target.id)"
-                >⇅</span
-              >
-            </h2>
+            <h2 id="Country" onclick="countrySortDescending(event.target.id)"> Country<span>⇅</span></h2>
           </th>
           <th>
-            <h2>
-              New Confirmed<span
-                span
-                id="NewConfirmed"
-                onclick="countrySortDescending(event.target.id)"
-                >⇅</span
-              >
-            </h2>
+            <h2 id="NewConfirmed" onclick="countrySortDescending(event.target.id)">New Confirmed<span>⇅</span></h2>
           </th>
           <th>
-            <h2>
-              Total Confirmed<span
-                id="TotalConfirmed"
-                onclick="countrySortDescending(event.target.id)"
-                >⇅</span
-              >
-            </h2>
+            <h2 id="TotalConfirmed" onclick="countrySortDescending(event.target.id)">Total Confirmed<span>⇅</span></h2>
           </th>
           <th>
-            <h2>
-              New Deaths<span
-                id="NewDeaths"
-                onclick="countrySortDescending(event.target.id)"
-                >⇅</span
-              >
-            </h2>
+            <h2 id="NewDeaths" onclick="countrySortDescending(event.target.id)">New Deaths<span>⇅</span></th>
+          <th>
+            <h2 id="TotalDeaths" onclick="countrySortDescending(event.target.id)">Total Deaths<span>⇅</span></h2>
           </th>
           <th>
-            <h2>
-              Total Deaths<span
-                id="TotalDeaths"
-                onclick="countrySortDescending(event.target.id)"
-                >⇅</span
-              >
-            </h2>
+            <h2 id="NewRecovered" onclick="countrySortDescending(event.target.id)">New Recovered<span>⇅</span></h2>
           </th>
           <th>
-            <h2>
-              New Recovered<span
-                id="NewRecovered"
-                onclick="countrySortDescending(event.target.id)"
-                >⇅</span
-              >
-            </h2>
-          </th>
-          <th>
-            <h2>
-              Total Recovered<span
-                id="TotalRecovered"
-                onclick="countrySortDescending(event.target.id)"
-                >⇅</span
-              >
-            </h2>
+            <h2 id="TotalRecovered" onclick="countrySortDescending(event.target.id)">Total Recovered<span>⇅</span></h2>
           </th>
         </tr>
       </thead>
@@ -96,6 +52,7 @@
     </table>
     <footer>
       <p>Source: John Hopkins Center for Systems Science and Engineering (CSSE)  via <a href="https://www.covid19api.com/">Covid19API</a>.</br> Updated as of <span id="date"></span>.</p>
+      <h2>Made by Alex & Ed.</h2>
     </footer>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>

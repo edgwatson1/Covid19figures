@@ -19,13 +19,37 @@ input {
 }
 
 img {
-  width: 150px;
+  width: 110px;
   float: right;
+  -webkit-animation: rotate-center 40s linear infinite both;
+  animation: rotate-center 40s linear infinite both;
 }
 
-img:hover {
-  shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* img:hover {
+  -webkit-animation: rotate-center 8s linear infinite both;
+  animation: rotate-center 8s linear infinite both;
+} */
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -78,4 +102,8 @@ tr:hover {
 footer {
   color: black;
   font-size: 10px;
+}
+
+span {
+  color: darkslategrey;
 }
