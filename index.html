@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Covid-19 Data</title>
+  </head>
+ 
+  <header><img src"https://images.app.goo.gl/XpcvnSyffSwLYNVU6></img></header>
+  <body>
+    <h1>Covid-19 Data</h1>
+    <img src="https://images.app.goo.gl/XpcvnSyffSwLYNVU6" alt="" >
+
+    <!-- api https://api.covid19api.com/summary -->
+    <input
+      type="text"
+      value=""
+      placeholder=" Search by country"
+      name="filter"
+    />
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <h2>
+              Country<span
+                id="Country"
+                onclick="countrySortDescending(event.target.id)"
+                >⇅</span
+              >
+            </h2>
+          </th>
+          <th>
+            <h2>
+              New Confirmed<span
+                span
+                id="NewConfirmed"
+                onclick="countrySortDescending(event.target.id)"
+                >⇅</span
+              >
+            </h2>
+          </th>
+          <th>
+            <h2>
+              Total Confirmed<span
+                id="TotalConfirmed"
+                onclick="countrySortDescending(event.target.id)"
+                >⇅</span
+              >
+            </h2>
+          </th>
+          <th>
+            <h2>
+              New Deaths<span
+                id="NewDeaths"
+                onclick="countrySortDescending(event.target.id)"
+                >⇅</span
+              >
+            </h2>
+          </th>
+          <th>
+            <h2>
+              Total Deaths<span
+                id="TotalDeaths"
+                onclick="countrySortDescending(event.target.id)"
+                >⇅</span
+              >
+            </h2>
+          </th>
+          <th>
+            <h2>
+              New Recovered<span
+                id="NewRecovered"
+                onclick="countrySortDescending(event.target.id)"
+                >⇅</span
+              >
+            </h2>
+          </th>
+          <th>
+            <h2>
+              Total Recovered<span
+                id="TotalRecovered"
+                onclick="countrySortDescending(event.target.id)"
+                >⇅</span
+              >
+            </h2>
+          </th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <footer>
+      <p>Source: John Hopkins Center for Systems Science and Engineering (CSSE)  via <a href="https://www.covid19api.com/">Covid19API</a>.</br> Updated as of <span id="date"></span>.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+  </body>
+</html>
